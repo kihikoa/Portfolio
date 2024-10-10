@@ -18,10 +18,14 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href = "#"></a>
+               <a href ="#"><img src ={} alt = "" /></a>
+               <a href ="#"><img src ={} alt = "" /></a>
+               <a href ="#"><img src ={} alt = "" /></a>
+               <a href ="#"><img src ={} alt = "" /></a>
 
 
               </div>
+              <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
