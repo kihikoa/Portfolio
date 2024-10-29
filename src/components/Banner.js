@@ -7,11 +7,11 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Software Developer",
-    "Spelman Grad",
-    "Teacher",
-    "Poet",
-    "Mental Health Advocate",
+    "Software Developer.",
+    "Spelman Grad.",
+    "Teacher.",
+    "Poet.",
+    "Mental Health Advocate.",
     "Go-Getter!",
   ];
   const [text, setText] = useState(" ");
