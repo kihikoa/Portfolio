@@ -36,11 +36,12 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                With a solid foundation in VR, software development, and web
-                technologies from Spelman College’s Innovation Lab, combined
-                with a creative touch in music and education from local and
-                international studies, I design inclusive, well-being-focused,
-                user-centered solutions for the everyday person.
+                With expertise in software, web, VR, and game development honed
+                at Spelman College’s Innovation Lab, alongside a unique fusion
+                of musical and educational insights from both local and
+                international experiences, I craft empathy-driven, inclusive,
+                wellness-oriented, user-centered innovations that resonate with
+                diverse communities.
               </p>
               <Carousel
                 responsive={responsive}
@@ -61,27 +62,31 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Teaching</h5>
+                  <h5>Effective Teacher</h5>
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Communication</h5>
+                  <h5>Productive Collaborator</h5>
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Problem Solving</h5>
+                  <h5>Holistic Problem Solver</h5>
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Empaty</h5>
+                  <h5>Empathy-driven Inclusive Leader</h5>
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Creativity</h5>
+                  <h5>Creative Innovator</h5>
                 </div>
                 <div className="item">
                   <img src={GreenLogo} alt="Image" />
-                  <h5>Adaptability</h5>
+                  <h5>Thoughtful Adapter</h5>
+                </div>
+                <div className="item">
+                  <img src={GreenLogo} alt="Image" />
+                  <h5>Versatile Musician</h5>
                 </div>
               </Carousel>
             </div>

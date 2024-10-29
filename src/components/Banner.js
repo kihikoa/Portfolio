@@ -11,6 +11,7 @@ export const Banner = () => {
     "Spelman Grad.",
     "Teacher.",
     "Poet.",
+    "Musician.",
     "Mental Health Advocate.",
     "Go-Getter!",
   ];
