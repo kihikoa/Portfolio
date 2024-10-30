@@ -109,7 +109,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 8%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -249,8 +249,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  /*background-image: url("./assets/img/banner-bg.png");*/
-  background-image: url("./assets/img/Green_Background.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(30, 30, 30, 0.8)
+    ),
+    url("./assets/img/Green_Background.png"); /* Gradient overlay + background image */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,42 +337,178 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*----------Skills CSS -----------*/
 .skill {
-  padding: 0 0 50px 0;
-  position: relative;
+  padding: 50px 0; /* Adjust padding for the top and bottom */
+  position: relative; /* Positioning context for inner elements */
+  background-color: #1e1e1e; /* Dark background color */
+  background-image: url("./assets/img/GradientStar.png"); /* Your background image */
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
 }
+
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  background: rgba(
+    21,
+    21,
+    21,
+    0.9
+  ); /* Semi-transparent background for content box */
+  border-radius: 64px; /* Rounded corners */
+  text-align: center; /* Center text */
+  padding: 60px 50px; /* Padding for the content */
+  margin: 0 auto; /* Center the box */
+  max-width: 800px; /* Optional: Set a max width for the content box */
+  position: relative; /* Positioning context */
+  z-index: 1; /* Ensure it sits above the background */
 }
+
 .skill h2 {
+  font-size: 45px; /* Heading size */
+  font-weight: 700; /* Bold */
+  color: #ffffff; /* Make sure text stands out */
+}
+
+.skill p {
+  color: #b8b8b8; /* Paragraph text color */
+  font-size: 18px; /* Font size */
+  letter-spacing: 0.8px; /* Letter spacing */
+  line-height: 1.5em; /* Line height */
+  margin: 14px 0 75px 0; /* Margin */
+}
+
+.skill-slider {
+  width: 80%; /* Slider width */
+  margin: 0 auto; /* Center the slider */
+  position: relative; /* Positioning context */
+}
+
+.skill-slider .item {
+  margin: 0 20px; /* Add horizontal spacing between items */
+}
+
+.skill-slider .item img {
+  width: 100%; /* Keep the image size in the carousel */
+  margin: 0 auto 30px auto; /* Center the image and add bottom margin */
+}
+
+/*----------Projects CSS -----------*/
+.project {
+  padding: 80px 0; /* Adjust padding for the top and bottom */
+  position: relative; /* Positioning context for inner elements */
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.6), rgba(0, 0, 0, 0.9)),
+    url("./assets/img/Green_Background.png"); /* Gradient + Image */
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+}
+.project h2 {
   font-size: 45px;
   font-weight: 700;
+  text-align: center;
 }
-.skill p {
+.project p {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
 }
-.skill-slider {
-  width: 80%;
+.project .nav.nav-pills {
+  width: 70%;
   margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
   position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
+.project .nav.nav-pills .nav-link::before {
+  content: "";
   position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #9ad581 -5.91%, #093f1a 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #000000 -5.91%, #000000 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
 }
 
 @keyframes App-logo-spin {
