@@ -1,5 +1,6 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Modal } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { useState } from "react";
 import projImg1 from "../assets/img/Website.Wairimu.png";
 import projImg2 from "../assets/img/Website.REMIX.png";
 import projImg3 from "../assets/img/Website.Chatbot.png";
@@ -18,11 +19,24 @@ import projImg15 from "../assets/img/Website.REU.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
+  const [show, setShow] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  // Function to handle showing the modal
+
+  const handleShow = (project) => {
+    setSelectedProject(project);
+    setShow(true);
+  };
+  // Function to close the modal
+  const handleClose = () => setShow(false);
+
   const projects1 = [
     {
       title: "Project Concept: AI Character Voice Mental Health Chatbot",
       description:
         "Designed to offer emotional support and mental health resources",
+      details: "ujfnewohgniorehgnviorehgboidrnbgndfklbnfklbnlfbnklfnblfknb",
       imgUrl: projImg3,
     },
     {
@@ -120,7 +134,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__slideInUp" : ""
                   }
                 >
                   <h2>Projects</h2>
@@ -157,9 +171,13 @@ export const Projects = () => {
                           creativity, and technical skills in action.
                         </p>
                         <Row>
-                          {projects1.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects1.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              onClick={() => handleShow(project)} // Pass handleShow here
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
@@ -169,9 +187,13 @@ export const Projects = () => {
                           environments.
                         </p>
                         <Row>
-                          {projects2.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects2.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              onClick={() => handleShow(project)} // Pass handleShow here
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
@@ -180,9 +202,13 @@ export const Projects = () => {
                           dedication to mastering new skills and technologies.
                         </p>
                         <Row>
-                          {projects3.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects3.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              onClick={() => handleShow(project)} // Pass handleShow here
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
@@ -193,6 +219,24 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+      {/* Modal for Project Details */}
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Title>{selectedProject?.title}</Modal.Title>{" "}
+        {/* Show project title */}
+        <Modal.Body>
+          <img
+            src={selectedProject?.imgUrl}
+            alt={selectedProject?.title}
+            className="img-fluid mb-3"
+          />{" "}
+          {/* Show project image */}
+          <p>{selectedProject?.description}</p>{" "}
+          {/* Show brief project description */}
+          <p>{selectedProject?.details}</p>{" "}
+          {/* Show additional project details */}
+        </Modal.Body>
+        <Modal.Footer>{/* Close button to hide the modal */}</Modal.Footer>
+      </Modal>
     </section>
   );
 };
