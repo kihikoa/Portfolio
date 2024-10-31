@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav, Modal } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav, Modal, Button } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import { useState } from "react";
 import projImg1 from "../assets/img/Website.Wairimu.png";
@@ -139,7 +139,6 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Empowering Innovation Through Technology and Education: A
                     Portfolio Showcasing My Journey in Software Development,
                     Teaching, and Mental Health Advocacy.
                   </p>
@@ -147,7 +146,6 @@ export const Projects = () => {
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
                     >
                       <Nav.Item>
                         <Nav.Link eventKey="first">Projects</Nav.Link>
@@ -160,57 +158,22 @@ export const Projects = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
-                      id="slideInUp"
                       className={
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        <p>
-                          Innovative creations that showcase problem-solving,
-                          creativity, and technical skills in action.
-                        </p>
                         <Row>
                           {projects1.map((project, index) => (
                             <ProjectCard
                               key={index}
                               {...project}
-                              onClick={() => handleShow(project)} // Pass handleShow here
+                              onClick={() => handleShow(project)}
                             />
                           ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <p>
-                          Meaningful, hands-on experiences that bridge theory
-                          and practice, shaping expertise in diverse
-                          environments.
-                        </p>
-                        <Row>
-                          {projects2.map((project, index) => (
-                            <ProjectCard
-                              key={index}
-                              {...project}
-                              onClick={() => handleShow(project)} // Pass handleShow here
-                            />
-                          ))}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          An ongoing journey of growth fueled by curiosity and
-                          dedication to mastering new skills and technologies.
-                        </p>
-                        <Row>
-                          {projects3.map((project, index) => (
-                            <ProjectCard
-                              key={index}
-                              {...project}
-                              onClick={() => handleShow(project)} // Pass handleShow here
-                            />
-                          ))}
-                        </Row>
-                      </Tab.Pane>
+                      {/* Add other panes for "Experiences" and "Education" here */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>
@@ -219,23 +182,28 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
+
       {/* Modal for Project Details */}
       <Modal show={show} onHide={handleClose} centered>
-        <Modal.Title>{selectedProject?.title}</Modal.Title>{" "}
-        {/* Show project title */}
+        <Modal.Header>
+          <Modal.Title>{selectedProject?.title}</Modal.Title>
+        </Modal.Header>
         <Modal.Body>
           <img
             src={selectedProject?.imgUrl}
             alt={selectedProject?.title}
             className="img-fluid mb-3"
-          />{" "}
-          {/* Show project image */}
-          <p>{selectedProject?.description}</p>{" "}
-          {/* Show brief project description */}
-          <p>{selectedProject?.details}</p>{" "}
-          {/* Show additional project details */}
+          />
+          <p>{selectedProject?.description}</p>
+          {selectedProject?.details && <p>{selectedProject?.details}</p>}
         </Modal.Body>
-        <Modal.Footer>{/* Close button to hide the modal */}</Modal.Footer>
+        <Modal.Footer className="custom-modal-footer">
+          {" "}
+          {/* Place this after Modal.Body */}
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
       </Modal>
     </section>
   );

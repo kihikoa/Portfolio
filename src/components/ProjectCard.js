@@ -12,8 +12,6 @@ export const ProjectCard = ({ title, description, imgUrl, onClick }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-          <p className="more-details">Click for more details...</p>{" "}
-          {/* Additional text for prompt */}
         </div>
       </div>
     </Col>

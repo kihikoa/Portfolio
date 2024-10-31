@@ -6,6 +6,38 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
+  const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+
+    if (value === "connect") {
+      const connectSection = document.getElementById("connect");
+      if (connectSection) {
+        const yOffset = -50; // Adjust this offset as needed
+        const y =
+          connectSection.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  };
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
@@ -20,8 +52,6 @@ export const Banner = () => {
   const [text, setText] = useState(" ");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
-
-  // Added missing `index` state
   const [index, setIndex] = useState(1);
 
   useEffect(() => {
@@ -29,12 +59,12 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => clearInterval(ticker); // Removed extra comma
+    return () => clearInterval(ticker);
   }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
-    let fullText = toRotate[i]; // Fixed typo `fullYext`
+    let fullText = toRotate[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
@@ -73,15 +103,14 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {"Hi, I’m Angela: "} <span className="wrap">{text}</span>{" "}
-                    {/* Fixed text display */}
+                    {"Hi, I’m Angela: "} <span className="wrap">{text}</span>
                   </h1>
                   <p>
                     Harmonizing VR, Technology, Music, and Education for an
                     Inclusive Future of Well-being
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
+                  <button onClick={() => onUpdateActiveLink("connect")}>
+                    Let&apos;s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

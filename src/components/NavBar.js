@@ -73,9 +73,18 @@ export const NavBar = () => {
                 <img src={navIcon2} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Blog</span>
-            </button>
+
+            {/* Wrap the button inside an anchor tag to keep the button styling */}
+            <a
+              href="https://angealwaysapoet.blogspot.com" // Replace with your actual blog URL
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <button className="vvd">
+                <span>Blog</span>
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>
