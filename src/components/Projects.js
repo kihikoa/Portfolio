@@ -173,6 +173,28 @@ export const Projects = () => {
                           ))}
                         </Row>
                       </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects2.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              onClick={() => handleShow(project)}
+                            />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {projects3.map((project, index) => (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              onClick={() => handleShow(project)}
+                            />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
                       {/* Add other panes for "Experiences" and "Education" here */}
                     </Tab.Content>
                   </Tab.Container>
