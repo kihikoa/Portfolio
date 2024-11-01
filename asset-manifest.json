@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.bf1acf65.css",
-    "main.js": "/Portfolio/static/js/main.50ff49e8.js",
+    "main.js": "/Portfolio/static/js/main.f302be5f.js",
     "static/js/453.68693753.chunk.js": "/Portfolio/static/js/453.68693753.chunk.js",
     "static/media/Website.Wairimu.png": "/Portfolio/static/media/Website.Wairimu.5122beb50cc7536680e2.png",
     "static/media/Website.Students.png": "/Portfolio/static/media/Website.Students.181b5be1ca239f925cda.png",
@@ -40,11 +40,11 @@
     "static/media/arrow2.svg": "/Portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/Portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "main.bf1acf65.css.map": "/Portfolio/static/css/main.bf1acf65.css.map",
-    "main.50ff49e8.js.map": "/Portfolio/static/js/main.50ff49e8.js.map",
+    "main.f302be5f.js.map": "/Portfolio/static/js/main.f302be5f.js.map",
     "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf1acf65.css",
-    "static/js/main.50ff49e8.js"
+    "static/js/main.f302be5f.js"
   ]
 }
