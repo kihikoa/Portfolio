@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.bf1acf65.css",
-    "main.js": "/Portfolio/static/js/main.f302be5f.js",
+    "main.css": "/Portfolio/static/css/main.1e9c9bfb.css",
+    "main.js": "/Portfolio/static/js/main.6c942c80.js",
     "static/js/453.68693753.chunk.js": "/Portfolio/static/js/453.68693753.chunk.js",
     "static/media/Website.Wairimu.png": "/Portfolio/static/media/Website.Wairimu.5122beb50cc7536680e2.png",
     "static/media/Website.Students.png": "/Portfolio/static/media/Website.Students.181b5be1ca239f925cda.png",
@@ -39,9 +39,12 @@
     "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/arrow2.svg": "/Portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/Portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.bf1acf65.css.map": "/Portfolio/static/css/main.bf1acf65.css.map",
-    "main.f302be5f.js.map": "/Portfolio/static/js/main.f302be5f.js.map",
+    "main.1e9c9bfb.css.map": "/Portfolio/static/css/main.1e9c9bfb.css.map",
+    "main.6c942c80.js.map": "/Portfolio/static/js/main.6c942c80.js.map",
     "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
   },
-  "entrypoints": ["static/css/main.bf1acf65.css", "static/js/main.f302be5f.js"]
+  "entrypoints": [
+    "static/css/main.1e9c9bfb.css",
+    "static/js/main.6c942c80.js"
+  ]
 }
