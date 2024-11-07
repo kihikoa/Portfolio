@@ -608,9 +608,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*----------- Modal Styling -----------*/
 
 .modal {
-  border-radius: 100px; /* Rounded edges for the entire modal */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-  padding: 100px 100px 0 0; /* Adjust padding as needed */
+  width: 100%; /* Set a large width to make it longer */
+  height: 50%; /* Set a smaller height */
+  max-width: 100%; /* Ensure it doesn't exceed the page width */
+  max-height: 100%; /* Limit the height */
+  margin: 100px; /* Center the modal */
+  border-radius: 20px; /* Rounded edges */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -618,7 +622,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
   justify-content: space-between;
   height: 100%; /* Ensures content fills the modal */
-  padding: 0px 100px 0px 100px; /* Adjust padding as needed */
+  width: 100%; /* Ensure it stretches to fill the modal */
+  padding: 100px; /* Adjust padding for layout */
 
   background: linear-gradient(to top, rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.9)),
     url("./assets/img/Green_Background.png");

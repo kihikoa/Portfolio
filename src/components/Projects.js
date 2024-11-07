@@ -38,6 +38,30 @@ export const Projects = () => {
         "Designed to offer emotional support and mental health resources",
       details: "ujfnewohgniorehgnviorehgboidrnbgndfklbnfklbnlfbnklfnblfknb",
       imgUrl: projImg3,
+      process: [
+        {
+          stepTitle: "Initial Idea & Planning",
+          stepDescription:
+            "This is where I brainstormed the main concept and planned the features.",
+          stepImgUrl: "path/to/planning-image.jpg",
+        },
+        {
+          stepTitle: "Design Phase",
+          stepDescription: "Created wireframes and initial UI/UX designs.",
+          stepImgUrl: "path/to/design-image.jpg",
+        },
+        {
+          stepTitle: "Development",
+          stepDescription: "Started coding and integrating core features.",
+          stepImgUrl: "path/to/development-image.jpg",
+        },
+        {
+          stepTitle: "Testing & Refinements",
+          stepDescription:
+            "Conducted testing and improved the application based on feedback.",
+          stepImgUrl: "path/to/testing-image.jpg",
+        },
+      ],
     },
     {
       title: "Project Concept: VR Mental Wellness Journey",
@@ -206,7 +230,7 @@ export const Projects = () => {
       </Container>
 
       {/* Modal for Project Details */}
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Header>
           <Modal.Title>{selectedProject?.title}</Modal.Title>
         </Modal.Header>
@@ -217,11 +241,24 @@ export const Projects = () => {
             className="img-fluid mb-3"
           />
           <p>{selectedProject?.description}</p>
-          {selectedProject?.details && <p>{selectedProject?.details}</p>}
+          {selectedProject?.process && (
+            <div>
+              <h5>Development Process</h5>
+              {selectedProject.process.map((step, index) => (
+                <div key={index} className="mb-4">
+                  <h6>{step.stepTitle}</h6>
+                  <img
+                    src={step.stepImgUrl}
+                    alt={step.stepTitle}
+                    className="img-fluid mb-2"
+                  />
+                  <p>{step.stepDescription}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </Modal.Body>
-        <Modal.Footer className="custom-modal-footer">
-          {" "}
-          {/* Place this after Modal.Body */}
+        <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
