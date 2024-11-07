@@ -43,8 +43,5 @@
     "main.f302be5f.js.map": "/Portfolio/static/js/main.f302be5f.js.map",
     "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.bf1acf65.css",
-    "static/js/main.f302be5f.js"
-  ]
+  "entrypoints": ["static/css/main.bf1acf65.css", "static/js/main.f302be5f.js"]
 }
