@@ -3,7 +3,11 @@
 Welcome to my GitHub portfolio page! This repository showcases my work, projects, and experience relevant to my applications for graduate programs. Below, you will find a detailed overview of the key components and projects included in this portfolio.
 
 ## Overview
-This portfolio highlights projects that intersect my interests in computer science, human-computer interaction (HCI), music technology, and mental health innovation. I am deeply passionate about developing creative and impactful solutions that bridge technology and human experience.# Getting Started with Create React App
+This portfolio highlights projects that intersect my interests in computer science, human-computer interaction (HCI), music technology, and mental health innovation. I am deeply passionate about developing creative and impactful solutions that bridge technology and human experience.
+
+#----------------------------------------
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
