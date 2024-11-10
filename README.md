@@ -1,4 +1,4 @@
-# Portfolio Page for Graduate School Applications
+# Portfolio Page for Angela Kihiko
 
 Welcome to my GitHub portfolio page! This repository showcases my work, projects, and experience relevant to my applications for graduate programs. Below, you will find a detailed overview of the key components and projects included in this portfolio.
 
