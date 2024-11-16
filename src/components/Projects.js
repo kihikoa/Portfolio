@@ -16,6 +16,10 @@ import projImg12 from "../assets/img/Website.Earth.png";
 import projImg13 from "../assets/img/Website.Innovation.png";
 import projImg14 from "../assets/img/Website.STEMLeague.png";
 import projImg15 from "../assets/img/Website.REU.png";
+import projImg16 from "../assets/img/Website.Questioning.png";
+import projImg17 from "../assets/img/Website.People.jpg";
+import projImg18 from "../assets/img/Website.ChatbotGuy.jpg";
+import projImg19 from "../assets/img/Webste.ResonImu.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
@@ -30,30 +34,72 @@ export const Projects = () => {
   };
   // Function to close the modal
   const handleClose = () => setShow(false);
+  function StepComponent({ stepTitle, stepDescription, stepImgUrl }) {
+    return (
+      <div>
+        <h2 style={{ textAlign: "center" }}>{stepTitle}</h2>
+        <img src={stepImgUrl} alt={stepTitle} />
+        {/* Use dangerouslySetInnerHTML to render HTML correctly */}
+        <div dangerouslySetInnerHTML={{ __html: stepDescription }} />
+      </div>
+    );
+  }
 
   const projects1 = [
     {
       title: "Project Concept: AI Character Voice Mental Health Chatbot",
       description:
         "Designed to offer emotional support and mental health resources",
-      details: "ujfnewohgniorehgnviorehgboidrnbgndfklbnfklbnlfbnklfnblfknb",
-      imgUrl: projImg3,
+      details: " ",
+      imgUrl: projImg19,
       process: [
         {
-          stepTitle: "Initial Idea & Planning",
-          stepDescription:
-            "This is where I brainstormed the main concept and planned the features.",
-          stepImgUrl: "path/to/planning-image.jpg",
+          stepTitle: "Target Audiences",
+          stepDescription: `
+          <ul>
+            <li>Individuals seeking mental health support who may already be familiar with CBT techniques.</li>
+            <li>Users looking for a supplemental tool to complement their existing mental health practices.</li>
+            <li>Those in search of a cost-effective, easily accessible mental health support option.Those in search of a cost-effective, easily accessible mental health support option.</li>
+          </ul>
+
+          `,
+          stepImgUrl: projImg17,
         },
         {
-          stepTitle: "Design Phase",
-          stepDescription: "Created wireframes and initial UI/UX designs.",
-          stepImgUrl: "path/to/design-image.jpg",
+          stepTitle: "Key Features",
+          stepDescription: `
+          <strong style="display: block; text-align: center;">Guided CBT Exercises</strong>
+          <ul>
+            <li>Structured exercises for identifying negative thoughts.</li>
+            <li>Journaling prompts to help users document their thoughts and reflections.</li>
+            <li>Reframing exercises to encourage positive thinking and cognitive restructuring.</li>
+          </ul>
+        
+          <strong style="display: block; text-align: center;">Tips and Reminders</strong>
+          <ul>
+            <li>Regular coping strategies and tips for managing stress and anxiety.</li>
+            <li>Reminders for daily mental health practices.</li>
+          </ul>
+        
+          <strong style="display: block; text-align: center;">Personalized Responses</strong>
+          <ul>
+            <li>Adaptive responses based on user interactions and progress.</li>
+            <li>Personalized responses allow users to choose from different “chatbots” with unique voices that resonate with them, ensuring varied, relatable interaction experiences and maintaining engagement with contextually relevant feedback.</li>
+          </ul>
+        
+          <strong style="display: block; text-align: center;">Tone and Language</strong>
+          <ul>
+            <li>The chatbot’s tone should be supportive, empathetic, and encouraging.</li>
+            <li>It should create a safe, non-judgmental space for users to express themselves and explore their thoughts.</li>
+            <li>The language should be clear and positive, with a focus on promoting understanding and self-compassion.</li>
+          </ul>
+        `,
+          stepImgUrl: projImg18,
         },
         {
           stepTitle: "Development",
           stepDescription: "Started coding and integrating core features.",
-          stepImgUrl: "path/to/development-image.jpg",
+          stepImgUrl: projImg19,
         },
         {
           stepTitle: "Testing & Refinements",
@@ -252,7 +298,11 @@ export const Projects = () => {
                     alt={step.stepTitle}
                     className="img-fluid mb-2"
                   />
-                  <p>{step.stepDescription}</p>
+                  {/* Use dangerouslySetInnerHTML to render HTML */}
+                  <div
+                    style={{ whiteSpace: "pre-wrap" }}
+                    dangerouslySetInnerHTML={{ __html: step.stepDescription }}
+                  />
                 </div>
               ))}
             </div>
