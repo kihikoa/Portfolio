@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1e9c9bfb.css",
-    "main.js": "/Portfolio/static/js/main.6c942c80.js",
+    "main.css": "/Portfolio/static/css/main.79d17f03.css",
+    "main.js": "/Portfolio/static/js/main.1367e96f.js",
     "static/js/453.68693753.chunk.js": "/Portfolio/static/js/453.68693753.chunk.js",
     "static/media/Website.Wairimu.png": "/Portfolio/static/media/Website.Wairimu.5122beb50cc7536680e2.png",
     "static/media/Website.Students.png": "/Portfolio/static/media/Website.Students.181b5be1ca239f925cda.png",
@@ -15,11 +15,15 @@
     "static/media/Website.Spelman.png": "/Portfolio/static/media/Website.Spelman.88aa27e73e2221c633d0.png",
     "static/media/Website.RightThing.png": "/Portfolio/static/media/Website.RightThing.7142df5d6009b3297506.png",
     "static/media/Website.Jump.png": "/Portfolio/static/media/Website.Jump.7f98d6cadee71db687c2.png",
+    "static/media/Webste.ResonImu.png": "/Portfolio/static/media/Webste.ResonImu.4671eba06a54fc44994f.png",
     "static/media/angelacola_processed.png": "/Portfolio/static/media/angelacola_processed.47323a4acf0f5043d4d1.png",
     "static/media/spel.png": "/Portfolio/static/media/spel.595d5ca2617fb5a8e947.png",
+    "static/media/Website.ChatbotGuy.jpg": "/Portfolio/static/media/Website.ChatbotGuy.2bb0f7a43cef1e0b5771.jpg",
     "static/media/Website.Barnard.png": "/Portfolio/static/media/Website.Barnard.8f17f290dd38af19afbd.png",
+    "static/media/Website.Questioning.png": "/Portfolio/static/media/Website.Questioning.2a83911792e343a7f8a3.png",
     "static/media/Website.REMIX.png": "/Portfolio/static/media/Website.REMIX.d3ed37a4b35dcad4175f.png",
     "static/media/GreenBackgroundSkills.png": "/Portfolio/static/media/GreenBackgroundSkills.d9905749d833e87978d5.png",
+    "static/media/Website.People.jpg": "/Portfolio/static/media/Website.People.e31763e7af830d3d68ae.jpg",
     "static/media/Green_Background.png": "/Portfolio/static/media/Green_Background.ae5b6f747c0dd36e363f.png",
     "static/media/GradientStar.png": "/Portfolio/static/media/GradientStar.3254ecc1e25fcc5ea4b3.png",
     "static/media/gauge.png": "/Portfolio/static/media/gauge.29768cd9599066a31281.png",
@@ -39,12 +43,12 @@
     "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/arrow2.svg": "/Portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/Portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.1e9c9bfb.css.map": "/Portfolio/static/css/main.1e9c9bfb.css.map",
-    "main.6c942c80.js.map": "/Portfolio/static/js/main.6c942c80.js.map",
+    "main.79d17f03.css.map": "/Portfolio/static/css/main.79d17f03.css.map",
+    "main.1367e96f.js.map": "/Portfolio/static/js/main.1367e96f.js.map",
     "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e9c9bfb.css",
-    "static/js/main.6c942c80.js"
+    "static/css/main.79d17f03.css",
+    "static/js/main.1367e96f.js"
   ]
 }
