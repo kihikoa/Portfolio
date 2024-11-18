@@ -20,6 +20,7 @@ import projImg16 from "../assets/img/Website.Questioning.png";
 import projImg17 from "../assets/img/Website.People.jpg";
 import projImg18 from "../assets/img/Website.ChatbotGuy.jpg";
 import projImg19 from "../assets/img/Webste.ResonImu.png";
+import projImg20 from "../assets/img/Website.IVA.jpg";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
@@ -47,7 +48,7 @@ export const Projects = () => {
 
   const projects1 = [
     {
-      title: "Project Concept: AI Character Voice Mental Health Chatbot",
+      title: "Current Project: AI Character Voice Mental Health Chatbot",
       description:
         "Designed to offer emotional support and mental health resources",
       details: " ",
@@ -109,12 +110,7 @@ export const Projects = () => {
         },
       ],
     },
-    {
-      title: "Project Concept: VR Mental Wellness Journey",
-      description:
-        "Mindfulness techniques, breathing exercises, and interactive scenarios",
-      imgUrl: projImg4,
-    },
+
     {
       title: "Wairimu's Scavenger Hunt",
       description: "VR Mental Health Scavenger Hunt",
@@ -136,6 +132,14 @@ export const Projects = () => {
       title: "On The Flip Side",
       description: "Cross-Cultural Impact Gam Jam",
       imgUrl: projImg5,
+    },
+    {
+      title:
+        "Siri, Are You Eavesdropping? (Computer Science Bachelor’s Thesis)",
+      description:
+        "Exploring the privacy risks of Intelligent Virtual Assistants and advocating for user data protection.",
+      imgUrl: projImg20,
+      link: "/AreYouEavesdroppingUpdated.pdf", // Add link here
     },
   ];
   const projects2 = [
@@ -287,6 +291,18 @@ export const Projects = () => {
             className="img-fluid mb-3"
           />
           <p>{selectedProject?.description}</p>
+          {selectedProject?.link && (
+            <p>
+              <a
+                href={selectedProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#007BFF", textDecoration: "underline" }}
+              >
+                View Resource
+              </a>
+            </p>
+          )}
           {selectedProject?.process && (
             <div>
               <h5>Development Process</h5>
@@ -298,7 +314,6 @@ export const Projects = () => {
                     alt={step.stepTitle}
                     className="img-fluid mb-2"
                   />
-                  {/* Use dangerouslySetInnerHTML to render HTML */}
                   <div
                     style={{ whiteSpace: "pre-wrap" }}
                     dangerouslySetInnerHTML={{ __html: step.stepDescription }}
