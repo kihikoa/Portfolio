@@ -21,6 +21,8 @@ import projImg17 from "../assets/img/Website.People.jpg";
 import projImg18 from "../assets/img/Website.ChatbotGuy.jpg";
 import projImg19 from "../assets/img/Webste.ResonImu.png";
 import projImg20 from "../assets/img/Website.IVA.jpg";
+import projImg21 from "../assets/img/Website.FlipShot.png";
+import projImg22 from "../assets/img/Website.GamesForChange.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
@@ -119,27 +121,100 @@ export const Projects = () => {
     {
       title: "Project REMiX",
       description:
-        "Walt Disney Company Imagineering Research and Development Capstone Project",
+        "Project REMIX, my capstone project at The Walt Disney Company, blends culture, creativity, and technology to reimagine immersive storytelling experiences for diverse audiences.",
       imgUrl: projImg2,
+      process: [
+        {
+          stepDescription: `
+          Project REMiX is the culmination of my creative software development internship as a UNCF Disney Scholar at Imagineering Research and Development, and it's all about remixing Disney's Parks classic experiences and attractions through a Black cultural lens. 
+
+          Together with my mentor, Jonathan Becker, we envisioned Project REMiX as a large-scale concept that introduces a fresh storytelling experience while staying true to the source material. Our goal is to diversify the Disney Park experience beyond the familiar IPs like Princess and the Frog, Black Panther, or Lion King. We believe in reinventing these classic experiences from the ground up, paying homage to our beloved past and celebrating our diverse future. 
+
+          One captivating aspect of Project REMiX is the Electric Block Party, a proof of concept inspired by the Main Street Electrical Parade. In this concept, we focus on creating a dynamic and reactive marching band costume, drawing inspiration from the vibrant rhythms of HBCU marching bands and Black Mardi Gras. Imagine a costume with fiber optic cables braided with ball-balls, reminiscent of unique Black hairstyles. 
+
+          What makes this costume truly special is its connection to music. As a flute player, I wanted the LED lights to respond to the music I played. We mapped the lights to musical notes, creating a dynamic and electric visual experience. The colors and patterns change with each note, providing a captivating display that mirrors the energy and style of Black music and dance.
+
+          Throughout Project REMiX, we explored key cultural touchstones of the Black experience, including, but not limited to, music, fashion, and the importance of unity. We wanted to showcase the diversity within the Black community and bring that richness to Disney Park attractions. 
+
+          In essence, Project REMiX is driven by the belief that everyone deserves to see themselves in the park. As the Disney Parks brand expands into communities that historically have been less likely to participate, it's crucial that our attractions remain relevant, exciting, and inspirational to all guests.
+          `,
+          stepImgUrl: projImg22,
+        },
+        {
+          stepDescription: `
+          1. Conceptualization: Jonathan and I discussed the idea of remixing Disney Park experiences from a Black cultural perspective, with a specific focus on the Main Street Electrical Parade.
+ 
+          2. Research: I conducted extensive research on key cultural touchstones of the Black experience, identifying patterns and categories related to music, fashion, and community.
+
+          3. Prototyping in Virtual Reality: I utilized virtual reality to prototype potential costume looks, exploring different lighting patterns around a human avatar in the Unity game engine to visually capture the essence of Black energy and style.
+
+          4. Fiber Optic LED Dress Concept: Inspired by fashion designers using fiber optic cables for LED dresses, Jonathan and I decided to incorporate this concept into our costume. Jonathan box-braided fiber optic cables and added ball-balls to create organic lighting effects reminiscent of unique Black hairstyles. Notably, this internship was conducted remotely during the COVID-19 lockdown, with Jonathan shipping materials to me for collaboration. 
+
+          5. Mapping Lights to Musical Notes: To create dynamic and electric lighting, Jonathan suggested mapping the lights to musical notes. Using a microcontroller, microphone, pressure sensor, and LEDs integrated with my flute, I mapped color patterns to different flute notes. 
+
+          6. Technical Prototyping: I prototyped the microcontroller, microphone, pressure sensor, and LEDs to understand the technical aspects. This involved mapping out piano key visuals as a guide and reinterpreting piano keys with actual LEDs. 
+       
+          7. Building the Prototype Costume: After technical prototyping, we transitioned to building the physical prototype costume, integrating box-braided fiber optic cables, ball-balls, LED animation, and music-triggered lighting effects. 
+                  
+          8. Performance Testing: I conducted a rough proof-of-concept video to showcase how the prototype costumes could look during a performance, demonstrating the dynamic and vibrant effects in action. 
+                  
+          9. Presentation: I concluded the project with a presentation, sharing insights, experiences, and the outcomes of my creative software development internship.  
+        `,
+        },
+      ],
+
+      link: "https://play.unity.com/en/games/abc2854c-ba36-42a1-9e18-30696ca39f65/on-the-flip-side",
+      ctaText: "Play Game",
     },
     {
       title: "University of Miami REU: Computing for Structure",
       description:
-        "THE “DARK” ENERGY BETWEEN SONIC PARTIALS: MODELING AND VISUALIZATION OF WEAK SPECTRAL COMPONENTS FOR MUSICAL SOUND ANALYSIS AND SYNTHESIS",
+        "The Dark Energy Between Sonic Partials: Modeling and Visualization of Weak Spectral Components for Musical Sound Analysis and Synthesis",
       imgUrl: projImg15,
-    },
-    {
-      title: "On The Flip Side",
-      description: "Cross-Cultural Impact Gam Jam",
-      imgUrl: projImg5,
+      link: "/Portfolio/AKihiko-Research Essay.pdf", // Add
+      ctaText: "Read Abstract",
     },
     {
       title:
-        "Siri, Are You Eavesdropping? (Computer Science Bachelor’s Thesis)",
+        "Games for Change Cross-Cultural Impact Game Jam: On The Flip Side RPG",
+      description:
+        "Creating meaningful connections across cultures through immersive gameplay that inspires empathy and celebrates diversity.",
+      imgUrl: projImg21,
+      process: [
+        {
+          stepDescription: `
+          In March 2021, Games for Change hosted the week-long "Cross-Cultural Impact Gam Jam." I collaborated with Ashley Sarah Eliassaint and Saneliso "Sunny" Dube to create a narrative role-playing game, "On the Flip Side," using Yarn Spinner in Unity. This innovative tool allowed us to seamlessly build branching narratives and dialogues, earning our game an Honorable Mention for its exploration of diverse Black voices.  
+
+          Yarn Spinner proved to be an invaluable asset, offering writers an easy-to-use platform with powerful features to integrate content directly into our game. Despite the challenges of remote collaboration during the pandemic, our team successfully leveraged Yarn Spinner to craft a rich and engaging experience that challenges the monolithic perception of Black voices.    
+
+          The Honorable Mention recognizes the impact of "On the Flip Side" and highlights the importance of tools like Yarn Spinner in empowering creators to amplify underrepresented voices in the gaming industry. The game invites players to explore the multiplicity of voices within the broader context of the Black experience.
+          `,
+          stepImgUrl: projImg22,
+        },
+        {
+          stepDescription: `
+          Our journey with "On the Flip Side" during the Cross-Cultural Impact Game Jam unfolded amid the challenges of our college environment transitioning to remote work. With time constraints looming, our three-person team dedicated ourselves to the task, recognizing the importance of addressing stereotypes within the Black community.  
+
+           In the initial phase, we selected Spike Lee's "Do the Right Thing" for its ability to highlight diverse perspectives and showcase how people perceive the world in different lights. Building on this inspiration, our scripts were crafted to capture the richness of individual experiences, embodied by our main characters: Irvin, Jelani, and Amandla. My responsibilities centered around script production, finding sprites, and programming.  
+
+          As we delved into learning Yarn Spinner, our scriptwriting efforts aimed to bring depth to the narrative. The final days saw us navigating the complexities of remote programming. Despite the time pressures and the inevitable presence of errors, such as the missing apostrophe in the picture, our team persevered. 
+
+          Presenting our creation at the Cross-Cultural Impact Game Jam, we acknowledged its imperfections but celebrated the dedication and effort poured into "On the Flip Side." The recognition, in the form of an Honorable Mention, validated our commitment to challenging stereotypes and promoting inclusivity through the powerful medium of gaming.
+        `,
+        },
+      ],
+
+      link: "https://play.unity.com/en/games/abc2854c-ba36-42a1-9e18-30696ca39f65/on-the-flip-side",
+      ctaText: "Play Game",
+    },
+    {
+      title:
+        "Siri, Are You Eavesdropping? (2021 Computer Science Bachelor’s Thesis)",
       description:
         "Exploring the privacy risks of Intelligent Virtual Assistants and advocating for user data protection.",
       imgUrl: projImg20,
-      link: "/AreYouEavesdroppingUpdated.pdf", // Add link here
+      link: "/Portfolio/AreYouEavesdroppingUpdated.pdf", // Add link here
+      ctaText: "Read Full PDF",
     },
   ];
   const projects2 = [
@@ -299,7 +374,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 style={{ color: "#007BFF", textDecoration: "underline" }}
               >
-                View Resource
+                {selectedProject?.ctaText || "View Here"}
               </a>
             </p>
           )}
