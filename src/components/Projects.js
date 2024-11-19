@@ -68,7 +68,7 @@ export const Projects = () => {
       details: " ",
       imgUrl: projImg19,
       link: "/Portfolio/AreYouEavesdroppingUpdated.pdf", // Add link here
-      ctaText: "Read Full PDF",
+      ctaText: "View Concept and Plan",
     },
 
     {

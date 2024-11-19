@@ -612,7 +612,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: space-between;
   height: 100%; /* Ensures content fills the modal */
   width: 100%; /* Ensure it stretches to fill the modal */
-  padding: 100px; /* Adjust padding for layout */
+  padding: 150px; /* Adjust padding for layout */
 
   background: linear-gradient(to top, rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.9)),
     url("./assets/img/Green_Background.png");
