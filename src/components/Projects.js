@@ -23,6 +23,18 @@ import projImg19 from "../assets/img/Webste.ResonImu.png";
 import projImg20 from "../assets/img/Website.IVA.jpg";
 import projImg21 from "../assets/img/Website.FlipShot.png";
 import projImg22 from "../assets/img/Website.GamesForChange.png";
+import projImg23 from "../assets/img/Website.ButtonTemplate.png";
+import projImg24 from "../assets/img/Website.ChoiceScreen.png";
+import projImg25 from "../assets/img/Website.CostumeStill.png";
+import projImg26 from "../assets/img/Website.CostumeVR.gif";
+import projImg27 from "../assets/img/Website.LetsGlowCostume-2.gif";
+import projImg28 from "../assets/img/Website.FlutePlaying-4.gif";
+import projImg29 from "../assets/img/Website.AllCharactersInteract.png";
+import projImg30 from "../assets/img/Website.JelaniScript.png";
+import projImg31 from "../assets/img/Website.PickUPBottleHQnew.gif";
+import projImg32 from "../assets/img/Website.InsideMushroom1HQ.gif";
+import projImg33 from "../assets/img/Website.PushBallEditHQ.gif";
+import projImg34 from "../assets/img/Website.OpeningScreenHQ.gif";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
@@ -55,68 +67,50 @@ export const Projects = () => {
         "Designed to offer emotional support and mental health resources",
       details: " ",
       imgUrl: projImg19,
-      process: [
-        {
-          stepTitle: "Target Audiences",
-          stepDescription: `
-          <ul>
-            <li>Individuals seeking mental health support who may already be familiar with CBT techniques.</li>
-            <li>Users looking for a supplemental tool to complement their existing mental health practices.</li>
-            <li>Those in search of a cost-effective, easily accessible mental health support option.Those in search of a cost-effective, easily accessible mental health support option.</li>
-          </ul>
-
-          `,
-          stepImgUrl: projImg17,
-        },
-        {
-          stepTitle: "Key Features",
-          stepDescription: `
-          <strong style="display: block; text-align: center;">Guided CBT Exercises</strong>
-          <ul>
-            <li>Structured exercises for identifying negative thoughts.</li>
-            <li>Journaling prompts to help users document their thoughts and reflections.</li>
-            <li>Reframing exercises to encourage positive thinking and cognitive restructuring.</li>
-          </ul>
-        
-          <strong style="display: block; text-align: center;">Tips and Reminders</strong>
-          <ul>
-            <li>Regular coping strategies and tips for managing stress and anxiety.</li>
-            <li>Reminders for daily mental health practices.</li>
-          </ul>
-        
-          <strong style="display: block; text-align: center;">Personalized Responses</strong>
-          <ul>
-            <li>Adaptive responses based on user interactions and progress.</li>
-            <li>Personalized responses allow users to choose from different “chatbots” with unique voices that resonate with them, ensuring varied, relatable interaction experiences and maintaining engagement with contextually relevant feedback.</li>
-          </ul>
-        
-          <strong style="display: block; text-align: center;">Tone and Language</strong>
-          <ul>
-            <li>The chatbot’s tone should be supportive, empathetic, and encouraging.</li>
-            <li>It should create a safe, non-judgmental space for users to express themselves and explore their thoughts.</li>
-            <li>The language should be clear and positive, with a focus on promoting understanding and self-compassion.</li>
-          </ul>
-        `,
-          stepImgUrl: projImg18,
-        },
-        {
-          stepTitle: "Development",
-          stepDescription: "Started coding and integrating core features.",
-          stepImgUrl: projImg19,
-        },
-        {
-          stepTitle: "Testing & Refinements",
-          stepDescription:
-            "Conducted testing and improved the application based on feedback.",
-          stepImgUrl: "path/to/testing-image.jpg",
-        },
-      ],
+      link: "/Portfolio/AreYouEavesdroppingUpdated.pdf", // Add link here
+      ctaText: "Read Full PDF",
     },
 
     {
       title: "Wairimu's Scavenger Hunt",
-      description: "VR Mental Health Scavenger Hunt",
+      description:
+        "Wairimu's Scavenger Hunt: Immerse Yourself in a VR Journey of Discovery, Exploration, and Inner Peace",
       imgUrl: projImg1,
+      process: [
+        {
+          stepDescription: `
+          Embark on a virtual adventure with Wairimu’s Scavenger Hunt, a captivating VR game crafted using Unity. Developed during the challenging lockdown phases of my final semester at Spelman, this project became a personal oasis amidst pandemic-induced anxiety. In this immersive experience, players discover a world filled with hidden treasures and serene environments. Hunt for messages in bottles, encounter delightful crabs, unwind in the enchanting Mushroom House, and enjoy the therapeutic experience of wading in the water while pushing around a giant beach ball.
+
+          Wairimu’s Scavenger Hunt is not just a game; it's a testament to creativity, resilience, and the power of immersive experiences to provide solace during challenging times. Also, Wairimu is my middle name!
+          `,
+          stepImgUrl: projImg31,
+        },
+        {
+          stepImgUrl: projImg32,
+        },
+        {
+          stepDescription: `
+          Week 1: Delved into the fundamentals of Unity, mastering the art of importing characters to lay the foundation for the virtual reality.
+
+          Week 2: Explored the intricacies of colliders and character controls, ensuring a seamless and responsive gaming experience.
+
+          Week 3-6: Immersed myself in terrain building, sculpting the landscapes that would become the backdrop for players' exploration.
+
+          Week 7: Implemented overlays with messages, adding an extra layer of depth to the narrative and enhancing the immersive quality of the game.
+
+          Week 8: Introduced character actions, allowing players to interact with the virtual world by bending down to pick up a bottle, adding a touch of realism to the gameplay.
+
+          Week 9-12: Brought the vision to life with the scavenger hunt implementation, creating an engaging and rewarding experience for players as they navigate the virtual landscapes in search of hidden treasures.
+        `,
+          stepImgUrl: projImg33,
+        },
+        {
+          stepImgUrl: projImg34,
+        },
+      ],
+
+      link: "https://kihiko.itch.io/wairimus-scavenger-hunt",
+      ctaText: "Play Game",
     },
     {
       title: "Project REMiX",
@@ -138,7 +132,10 @@ export const Projects = () => {
 
           In essence, Project REMiX is driven by the belief that everyone deserves to see themselves in the park. As the Disney Parks brand expands into communities that historically have been less likely to participate, it's crucial that our attractions remain relevant, exciting, and inspirational to all guests.
           `,
-          stepImgUrl: projImg22,
+          stepImgUrl: projImg32,
+        },
+        {
+          stepImgUrl: projImg28,
         },
         {
           stepDescription: `
@@ -160,6 +157,10 @@ export const Projects = () => {
                   
           9. Presentation: I concluded the project with a presentation, sharing insights, experiences, and the outcomes of my creative software development internship.  
         `,
+          stepImgUrl: projImg26,
+        },
+        {
+          stepImgUrl: projImg27,
         },
       ],
 
@@ -189,7 +190,10 @@ export const Projects = () => {
 
           The Honorable Mention recognizes the impact of "On the Flip Side" and highlights the importance of tools like Yarn Spinner in empowering creators to amplify underrepresented voices in the gaming industry. The game invites players to explore the multiplicity of voices within the broader context of the Black experience.
           `,
-          stepImgUrl: projImg22,
+          stepImgUrl: projImg23,
+        },
+        {
+          stepImgUrl: projImg29,
         },
         {
           stepDescription: `
@@ -201,6 +205,10 @@ export const Projects = () => {
 
           Presenting our creation at the Cross-Cultural Impact Game Jam, we acknowledged its imperfections but celebrated the dedication and effort poured into "On the Flip Side." The recognition, in the form of an Honorable Mention, validated our commitment to challenging stereotypes and promoting inclusivity through the powerful medium of gaming.
         `,
+          stepImgUrl: projImg30,
+        },
+        {
+          stepImgUrl: projImg24,
         },
       ],
 

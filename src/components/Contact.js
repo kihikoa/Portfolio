@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/Website.Jump.png";
-
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
@@ -16,34 +15,63 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const [errors, setErrors] = useState({}); // To track validation errors
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
+    setErrors({ ...errors, [category]: "" }); // Clear error when user types
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formDetails.firstName.trim()) {
+      newErrors.firstName = "First Name is required.";
+    }
+    if (!formDetails.email.trim()) {
+      newErrors.email = "Email is required.";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formDetails.email)
+    ) {
+      newErrors.email = "Enter a valid email address.";
+    }
+    if (!formDetails.message.trim()) {
+      newErrors.message = "Message is required.";
+    }
+
+    setErrors(newErrors);
+
+    // If there are no errors, return true
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return; // Stop submission if validation fails
+    }
+
     setButtonText("Sending...");
     try {
-      const response = await fetch("http://localhost:5001/contact", {
+      const response = await fetch("https://formspree.io/f/mdkodeja", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
         },
         body: JSON.stringify(formDetails),
       });
-      const result = await response.json();
-      setFormDetails(formInitialDetails);
-      setButtonText("Send");
-      if (result.code === 200) {
-        setStatus({ success: true, message: "Message sent successfully" });
+
+      if (response.ok) {
+        setFormDetails(formInitialDetails);
+        setStatus({ success: true, message: "Message sent successfully!" });
       } else {
         setStatus({
           success: false,
-          message: "Something went wrong, please try again later.",
+          message: "Something went wrong. Please try again later.",
         });
       }
     } catch (error) {
@@ -51,8 +79,8 @@ export const Contact = () => {
         success: false,
         message: "An error occurred. Please try again later.",
       });
-      setButtonText("Send");
     }
+    setButtonText("Send");
   };
 
   return (
@@ -86,6 +114,9 @@ export const Contact = () => {
                         onFormUpdate("firstName", e.target.value)
                       }
                     />
+                    {errors.firstName && (
+                      <small className="text-danger">{errors.firstName}</small>
+                    )}
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
@@ -102,6 +133,9 @@ export const Contact = () => {
                       placeholder="Email Address"
                       onChange={(e) => onFormUpdate("email", e.target.value)}
                     />
+                    {errors.email && (
+                      <small className="text-danger">{errors.email}</small>
+                    )}
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
@@ -118,6 +152,9 @@ export const Contact = () => {
                       placeholder="Message"
                       onChange={(e) => onFormUpdate("message", e.target.value)}
                     ></textarea>
+                    {errors.message && (
+                      <small className="text-danger">{errors.message}</small>
+                    )}
                     <button type="submit">
                       <span>{buttonText}</span>
                     </button>
