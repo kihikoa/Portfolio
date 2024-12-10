@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/Website.Jump.png";
+import contactImg2 from "../assets/img/website.angelacontactphoto.png";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {

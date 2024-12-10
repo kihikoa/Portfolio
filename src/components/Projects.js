@@ -65,9 +65,16 @@ export const Projects = () => {
       title: "Current Project: AI Character Voice Mental Health Chatbot",
       description:
         "Designed to offer emotional support and mental health resources",
-      details: " ",
+
+      process: [
+        {
+          stepDescription: `
+          This project is a work in progress that focuses on developing an AI-powered mental health chatbot designed to provide empathetic, voice-based support. The chatbot aims to make mental wellness tools more accessible and stigma-free by offering features like guided relaxation, self-care prompts, and journaling assistance. Through this initiative, I’m exploring how artificial intelligence can bridge the gap in mental health accessibility and create a compassionate, user-friendly experience. This project reflects my commitment to leveraging technology for emotional well-being and promoting mental health awareness. `,
+        },
+      ],
+
       imgUrl: projImg19,
-      link: "/Portfolio/AreYouEavesdroppingUpdated.pdf", // Add link here
+      link: "/Portfolio/ChatbotKeynote1.pdf", // Add link here
       ctaText: "View Concept and Plan",
     },
 
@@ -132,7 +139,7 @@ export const Projects = () => {
 
           In essence, Project REMiX is driven by the belief that everyone deserves to see themselves in the park. As the Disney Parks brand expands into communities that historically have been less likely to participate, it's crucial that our attractions remain relevant, exciting, and inspirational to all guests.
           `,
-          stepImgUrl: projImg32,
+          stepImgUrl: projImg25,
         },
         {
           stepImgUrl: projImg28,
@@ -164,8 +171,8 @@ export const Projects = () => {
         },
       ],
 
-      link: "https://play.unity.com/en/games/abc2854c-ba36-42a1-9e18-30696ca39f65/on-the-flip-side",
-      ctaText: "Play Game",
+      link: "https://drive.google.com/file/d/1mljeTkFPaLVr2B8DDZUA52cambsUmxOP/view?usp=sharing",
+      ctaText: "Play Presentation",
     },
     {
       title: "University of Miami REU: Computing for Structure",
@@ -230,12 +237,30 @@ export const Projects = () => {
       title: "Project: UN Sustainable Development Goals ",
       description: "Teaching in Daegu, South Korea",
       imgUrl: projImg6,
+      process: [
+        {
+          stepDescription: `
+          Teaching in Korea was one of the most transformative experiences of my life and my first formal teaching role with high school students. As an Advanced and International Baccalaureate (IB) English teacher at Daegu Foreign Language High School, I collaborated with my co-teacher to implement "Project: UN Sustainable Goals," a dynamic program centered around the United Nations SDGs. Each week, I guided students through engaging lessons that incorporated pop culture and interactive activities, helping them connect global challenges to their everyday lives. The project culminated in student-led presentations proposing innovative solutions for their chosen SDG, showcasing their growth in critical thinking, teamwork, and public speaking.
+
+          As my first formal teaching experience, it was a steep learning curve—adapting to a new cultural context, navigating the expectations of an advanced curriculum, and learning to inspire and guide students in meaningful ways. Not only did I survive, but I thrived, finding creative solutions to challenges like language barriers and making global issues relatable for my students. The experience profoundly shaped my teaching philosophy, emphasizing the importance of making learning relevant, inclusive, and inspiring. It left me with a deep appreciation for the power of education to foster global awareness and create positive change.
+          `,
+        },
+      ],
     },
     {
       title: "STEM League",
       description:
         "Empowering the Next Generation: Volunteering as an Instructor for STEM League, Where I Supported Middle and High School Students in Their Journey to Master Computer Science through Engaging Lectures, Interactive Lessons, and Inspiring Presentations.",
       imgUrl: projImg14,
+      process: [
+        {
+          stepDescription: `
+          During my time with STEM League, I had the privilege of virtually teaching computer science to middle and high school students, fostering a love for technology and innovation in the next generation. Conducting weekly online lectures and coding sessions, I created an inclusive and supportive virtual learning environment tailored to the needs of underserved communities. Leveraging digital tools, I made lessons engaging and accessible, ensuring that students, regardless of their background, could actively participate and grow their technical skills. My approach emphasized not only coding but also problem-solving and creativity, empowering students to see themselves as future leaders in STEM.
+
+          The virtual format presented unique challenges, but it also provided valuable opportunities to connect with students across different locations and adapt teaching strategies to a digital setting. This experience deepened my passion for education and mentorship, reaffirming my belief in the power of representation and equity in STEM. Witnessing students grow in confidence and enthusiasm for computer science was incredibly rewarding, and it inspired my ongoing commitment to expanding access to STEM education for marginalized communities. STEM League gave me the chance to make a meaningful impact while sharpening my ability to innovate in teaching methods, even in a virtual landscape.
+          `,
+        },
+      ],
     },
 
     {
@@ -243,23 +268,78 @@ export const Projects = () => {
       description:
         "Igniting Creativity and Technological Innovation: Pioneering Projects in the Spelman College Innovation Lab",
       imgUrl: projImg13,
+      process: [
+        {
+          stepDescription: `
+          The Spelman Innovation Lab was a transformative space where I explored the intersections of technology, creativity, and social impact during my undergraduate years. At the height of the COVID-19 pandemic, the lab transitioned to a fully virtual format, allowing students like me to collaborate and innovate remotely. Despite the challenges of working online, the lab maintained its vibrant community and commitment to fostering equity and diversity in STEM. Its emphasis on interdisciplinary exploration inspired me to think critically about how technology could address real-world challenges and empower underrepresented communities. Even in its virtual format, the Innovation Lab was a catalyst for my growth as a technologist and creator.
+
+          During my time in the Innovation Lab, I developed two of my most meaningful projects: Wairimu’s Scavenger Hunt and On the Flip Side. These projects allowed me to merge technical skills with creative storytelling, focusing on themes of mental well-being and interactive design. Wairimu’s Scavenger Hunt was a VR game designed to provide solace and promote mindfulness, while On the Flip Side explored narrative role-playing to create meaningful user experiences. Both projects were deeply influenced by the lab’s mission to inspire innovation and inclusivity. Though the Innovation Lab is now a physical space, my virtual experiences there remain foundational, shaping my passion for using technology as a tool for positive change.
+          `,
+        },
+      ],
     },
     {
       title: "Josai University",
       description:
         "Bridging Cultures through Language: Intensive Japanese Studies at Josai International University",
       imgUrl: projImg10,
+      process: [
+        {
+          stepDescription: `
+          Participating in the Summer Study Program at Josai International University in Togane, Japan, was one of the most memorable experiences of my academic journey. Alongside fellow students from Spelman and Morehouse, I had the unique opportunity to study Japanese language and culture in an immersive four-week program, earning eight credits while exploring the rich traditions of Japan. The program seamlessly blended intensive coursework with hands-on cultural activities like tea ceremonies, calligraphy, and excursions to historic landmarks. These experiences provided a comprehensive introduction to Japanese society, bridging classroom learning with meaningful real-world applications.
+
+          What made the program even more special was the sense of community I shared with my peers. Traveling with Spelman and Morehouse students allowed me to build lasting friendships and form a support network that enriched the experience even further. Together, we navigated cultural differences, celebrated milestones, and created memories that I will cherish forever. This journey taught me not only about Japanese culture but also about the importance of cross-cultural collaboration and community, values I carry into all aspects of my academic and professional life. My time at Josai International University remains a defining chapter, inspiring my passion for global learning and connection.
+          `,
+        },
+      ],
     },
     {
-      title: "Passionist Earth and Spirit Center",
+      title:
+        "Passionist Earth and Spirit Center: Listen, Learn, Act – Racial Justice, Mindfulness, and The Election: Reflections",
       description:
         "Fostering Mindfulness and Racial Justice: An Interfaith Spirituality Center Committed to Contemplative Practices, Environmental Stewardship, and the Flourishing of All Communities",
       imgUrl: projImg12,
+      process: [
+        {
+          stepDescription: `
+          Participating in the Listen, Learn, Act – Racial Justice, Mindfulness, and The Election course at the Passionist Earth and Spirit Center was an enlightening and thought-provoking experience. Over five weeks, I explored meaningful topics with a focus on mindfulness, justice, and civic engagement during an important election season. Each session provided an opportunity to learn, reflect, and connect with others who care about making a positive impact.
+
+          Class 1: Civil Rights and the Power of Voting
+          The series began with Raoul Cunningham, Louisville NAACP President, and Dr. Raymond Burse, Vice President, sharing their personal stories and experiences with civic engagement. From protesting segregated spaces in Louisville to advocating for better policies in education and voting access, they illustrated how persistence and action can create change over time. This session helped me understand the importance of voting and the role it plays in shaping our communities.
+          
+          Class 2: Mindfulness and Staying Grounded
+          This session introduced us to mindfulness practices that can help when addressing challenging topics or situations. By learning techniques like meditation and reflective exercises, I discovered ways to stay calm and focused, even in the face of divisive issues. These practices emphasized the importance of approaching conversations and decisions with care, understanding, and a sense of balance.
+          
+          Class 3: Learning from Louisville’s History
+          Amber Duke, Executive Director of the ACLU of Kentucky, shared the story of the Wade-Braden case, a pivotal moment in Louisville’s history. She discussed how a Black family was supported by allies in purchasing a home in a white neighborhood and the challenges they faced. This story helped me appreciate the resilience of those who work for fairness and the importance of addressing inequities thoughtfully and respectfully.
+          
+          Class 4: Equity in Education
+          This session focused on opportunities for improvement within Jefferson County Public Schools (JCPS). The speakers shared insights into how thoughtful policies and resources can make a difference for all students. The discussion highlighted the importance of education as a pathway to success and how we can advocate for solutions that benefit everyone in our communities.
+          
+          Class 5: Taking Action and Moving Forward
+          The final session encouraged us to think about how we can contribute to positive change. Whether through voting, having meaningful conversations, or supporting local organizations, we explored ways to stay engaged and make a difference. This session was an uplifting reminder of the collective power we have to create better outcomes for all.
+          
+          Final Reflections
+          Through this course, I learned so much about Louisville’s history, education, and the importance of thoughtful engagement. Each session emphasized the value of approaching issues with mindfulness and understanding, while also highlighting ways to be part of solutions. This experience was a wonderful opportunity to learn, reflect, and grow, and I am grateful for the knowledge and connections I gained.
+          `,
+        },
+      ],
     },
     {
       title: "Childhood Education: Kiddieland Daycare",
       description: "Nurturing Minds, Inspiring Futures",
       imgUrl: projImg7,
+      process: [
+        {
+          stepDescription: `
+          My time as a teacher at Kiddieland Daycare Center was more than a job—it was an opportunity to contribute to a legacy built by my grandmother, who ran the daycare for over 50 years. Kiddieland was a cornerstone of our community, providing a nurturing environment where children from diverse backgrounds could thrive. Watching her dedicate her life to supporting families and ensuring children had a strong foundation inspired my passion for education and my desire to continue her legacy in my own way.
+
+          At Kiddieland, I had the privilege of teaching toddlers during the summers, introducing them to phonics and reading, and supporting their emotional growth. Each day was filled with opportunities to nurture their curiosity and joy, while creating a safe space where every child felt valued and encouraged. These experiences planted the seed for my dream of transforming Kiddieland into a STEAM center—a space where children can explore science, technology, engineering, the arts, and mathematics in an engaging and supportive environment. I envision a center that not only honors my grandmother’s commitment to nurturing young minds but also equips children with the tools and inspiration to succeed in a rapidly changing world.
+          
+          My grandmother’s dedication to Kiddieland and her unwavering commitment to the children she served have profoundly influenced the work I do today and the goals I aspire to achieve. She taught me the importance of resilience, compassion, and creating opportunities for others, especially within underserved communities. Her ability to nurture and inspire young minds, while balancing the challenges of running a business, has been a constant source of motivation for me. It is because of her example that I feel called to not only continue her legacy through the creation of a STEAM center but also to become a professor one day. I want to educate and mentor future generations, demonstrating that education and innovation can be powerful tools for social change. My grandmother’s life and work remind me daily of the profound difference one person can make, and I hope to carry that same spirit into my teaching and research.
+          `,
+        },
+      ],
     },
   ];
   const projects3 = [
@@ -268,17 +348,43 @@ export const Projects = () => {
       description:
         "Cultivating Excellence in Black Women through Computer Science and Innovation",
       imgUrl: projImg9,
+      process: [
+        {
+          stepDescription: `
+          Attending Spelman College was one of the most transformative experiences of my life. As a historically Black college dedicated to empowering women, Spelman provided an environment where I could grow academically, personally, and socially. The close-knit community, inspiring faculty, and mission to cultivate leaders who are committed to positive change were central to my experience. Spelman’s motto, “A choice to change the world,” resonated deeply with me and continues to guide my aspirations today.
+
+          Spelman not only gave me a solid foundation in computer science but also nurtured my passion for social impact. It was at Spelman that I realized the power of combining technology and community to solve real-world problems. Surrounded by trailblazing peers and mentors, I was inspired to push beyond my limits and explore the intersections of creativity, innovation, and service. My time at Spelman instilled in me a deep sense of purpose and a commitment to excellence, and it remains the foundation of my journey toward making a meaningful difference in the world.
+          `,
+        },
+      ],
     },
     {
       title: "Code: You",
       description: "Community-based tech training program",
       imgUrl: projImg8,
+      process: [
+        {
+          stepDescription: `
+          Participating in the web development program with Code: You Louisville has been a rewarding journey of growth and discovery. This program provided me with the opportunity to enhance my skills in web development, exploring technologies and tools that are essential for creating modern, user-friendly websites. From understanding the foundations of HTML, CSS, and JavaScript to tackling more complex concepts in responsive design and project management, Code: You has challenged me to think creatively and solve problems with confidence.
+
+          This experience has not only expanded my technical expertise but also strengthened my resilience. While navigating the challenges of learning in a structured program, I gained a deeper appreciation for the importance of collaboration, persistence, and adaptability. Despite moments of self-doubt, I have remained committed to improving and growing, driven by the supportive community around me. Code: You Louisville has not only prepared me for opportunities in web development but also reminded me of the importance of continuous learning as I work toward building impactful and accessible digital solutions.
+          `,
+        },
+      ],
     },
     {
       title: "Barnard College",
-      description:
-        "Domestic Exchange at Barnard College: Delving into Computer Design through Lexical Analysis and Philosophy, I Explored Berkeley's Critique of Materialism, Questioning How Perception Shapes Our Understanding of Reality.iversity",
+      description: "Domestic Exchange at Barnard College",
       imgUrl: projImg11,
+      process: [
+        {
+          stepDescription: `
+          My time at Barnard College was a unique and enriching chapter of my academic journey. As part of a collaborative program during my studies at Spelman College, attending Barnard allowed me to experience the vibrancy and rigor of a liberal arts education in the heart of New York City. The environment at Barnard, with its strong emphasis on intellectual curiosity and interdisciplinary exploration, broadened my perspectives and challenged me to think critically about how education and technology intersect with society.
+
+          One of the most memorable aspects of my time at Barnard was being introduced to biofeedback technology, a tool that helped me understand and manage anxiety through interactive games. This experience sparked my interest in the intersection of technology and mental health, inspiring me to pursue work that empowers individuals to take control of their well-being. Barnard’s diverse and dynamic community provided a space to connect with peers and mentors who encouraged me to explore new ideas and perspectives. My time there not only enhanced my academic foundation but also deepened my commitment to creating meaningful, human-centered innovations.
+          `,
+        },
+      ],
     },
   ];
 
@@ -361,34 +467,43 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-
-      {/* Modal for Project Details */}
-      <Modal show={show} onHide={handleClose} centered size="lg">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        centered
+        size="lg" // You can change this or control dynamically
+      >
         <Modal.Header>
           <Modal.Title>{selectedProject?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          {/* Ensure image is responsive */}
           <img
             src={selectedProject?.imgUrl}
             alt={selectedProject?.title}
             className="img-fluid mb-3"
           />
+
           <p>{selectedProject?.description}</p>
+
+          {/* Call to action */}
           {selectedProject?.link && (
             <p>
               <a
                 href={selectedProject.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#007BFF", textDecoration: "underline" }}
+                className="text-primary text-decoration-underline"
               >
                 {selectedProject?.ctaText || "View Here"}
               </a>
             </p>
           )}
+
+          {/* Process section */}
           {selectedProject?.process && (
             <div>
-              <h5>Development Process</h5>
+              <h5>About the Experience</h5>
               {selectedProject.process.map((step, index) => (
                 <div key={index} className="mb-4">
                   <h6>{step.stepTitle}</h6>

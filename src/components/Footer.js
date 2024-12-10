@@ -19,6 +19,7 @@ export const Footer = () => {
               <a href="https://github.com/kihikoa">
                 <img src={navIcon2} alt="Icon" />
               </a>
+              <p>Website coded by me. Design by Webdecoded.</p>
             </div>
           </Col>
         </Row>
