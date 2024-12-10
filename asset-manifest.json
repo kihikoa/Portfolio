@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.df07a164.css",
-    "main.js": "/Portfolio/static/js/main.c7f26e3a.js",
+    "main.css": "/Portfolio/static/css/main.644d848f.css",
+    "main.js": "/Portfolio/static/js/main.304f890c.js",
     "static/js/453.68693753.chunk.js": "/Portfolio/static/js/453.68693753.chunk.js",
     "static/media/Website.FlutePlaying-4.gif": "/Portfolio/static/media/Website.FlutePlaying-4.3f6f549057f896f95040.gif",
     "static/media/Website.PushBallEditHQ.gif": "/Portfolio/static/media/Website.PushBallEditHQ.57f15889095ab0a6ae38.gif",
@@ -42,6 +42,7 @@
     "static/media/gauge.png": "/Portfolio/static/media/gauge.29768cd9599066a31281.png",
     "static/media/Website.Code.Louisville.png": "/Portfolio/static/media/Website.Code.Louisville.6084442d0d85e054b253.png",
     "static/media/Website.Innovation.png": "/Portfolio/static/media/Website.Innovation.764727f143b80f1fd322.png",
+    "static/media/website.angelacontactphoto.png": "/Portfolio/static/media/website.angelacontactphoto.8b8c065583a7d5ea796e.png",
     "static/media/Website.ButtonTemplate.png": "/Portfolio/static/media/Website.ButtonTemplate.65f3a3c6548303479da1.png",
     "static/media/BlackBackground.png": "/Portfolio/static/media/BlackBackground.a6cc772cf91a1ab97b02.png",
     "static/media/Website.IVA.jpg": "/Portfolio/static/media/Website.IVA.76e5157047788ab21ab4.jpg",
@@ -58,12 +59,12 @@
     "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/arrow2.svg": "/Portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/Portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.df07a164.css.map": "/Portfolio/static/css/main.df07a164.css.map",
-    "main.c7f26e3a.js.map": "/Portfolio/static/js/main.c7f26e3a.js.map",
+    "main.644d848f.css.map": "/Portfolio/static/css/main.644d848f.css.map",
+    "main.304f890c.js.map": "/Portfolio/static/js/main.304f890c.js.map",
     "453.68693753.chunk.js.map": "/Portfolio/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df07a164.css",
-    "static/js/main.c7f26e3a.js"
+    "static/css/main.644d848f.css",
+    "static/js/main.304f890c.js"
   ]
 }
