@@ -617,9 +617,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Ensures content fills the modal */
-  width: 100%; /* Ensure it stretches to fill the modal */
-  padding: 150px; /* Adjust padding for layout */
+  height: 100%;
+  width: 100%;
+  padding: 150px;
 
   background: linear-gradient(to top, rgba(30, 30, 30, 0.7), rgba(0, 0, 0, 0.9)),
     url("./assets/img/Green_Background.png");
@@ -632,11 +632,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .modal-header {
   display: flex;
   justify-content: center;
-  border: none; /* Remove border if not already set */
+  border: none;
 }
 .modal-header .btn-close {
   display: block !important;
-  filter: brightness(0) invert(1); /* Makes the button white */
+  filter: brightness(0) invert(1);
 }
 
 .modal-title {
@@ -658,10 +658,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center; /* Change text alignment to left */
-  max-width: 90%; /* Adjusts width while respecting smaller screens */
-  word-wrap: break-word; /* Breaks long words to prevent overflow */
-  white-space: pre-wrap; /* Preserves newlines */
+  text-align: center;
+  max-width: 90%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .modal-body h5 {
@@ -669,34 +669,66 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .centered-title {
-  font-size: 100px !important; /* Adjust size as needed */
+  font-size: 100px !important;
   text-align: center;
   font-weight: bold;
 }
+
 .modal-footer {
-  margin-top: auto; /* Pushes footer to the bottom */
+  margin-top: auto;
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
+  justify-content: center;
 }
 
+.custom-modal-footer {
+  margin-bottom: 20px;
+}
+
+/*----------- Responsive Adjustments -----------*/
 @media (max-width: 768px) {
+  .modal-content {
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .modal-title {
+    font-size: 28px; /* Adjust title size for readability */
+  }
+
+  .centered-title {
+    font-size: 60px !important; /* Reduce size for smaller devices */
+  }
+
+  .modal-body p {
+    font-size: 16px; /* Smaller font for better fit */
+    margin: 10px auto 20px auto; /* Adjust margins */
+    text-align: center;
+  }
+
   .modal-body img {
     max-width: 100%;
     height: auto;
   }
+
   .modal-body {
     padding: 1rem;
   }
 }
 
-.custom-modal-footer {
-  margin-bottom: 20px; /* Add more space if necessary */
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .modal-title {
+    font-size: 24px; /* Further adjust for very small devices */
   }
-  to {
-    transform: rotate(360deg);
+
+  .centered-title {
+    font-size: 50px !important; /* Further reduce size */
+  }
+
+  .modal-body p {
+    font-size: 14px; /* Further reduce text size */
+    margin: 8px auto 15px auto;
+  }
+
+  .modal-content {
+    padding: 20px; /* Even smaller padding */
   }
 }
